@@ -1,0 +1,12 @@
+.footer-html {
+    display: flex;
+    background-color: black;
+    color: #8d8b8b;
+    text-align: center;
+    padding: 1px 5px 1px 5px;
+
+    .footer-contenido {
+        max-width: 1200px;
+        margin: 0 auto; 
+    }
+}

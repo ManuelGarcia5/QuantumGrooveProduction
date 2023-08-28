@@ -1,0 +1,55 @@
+.hero-djs {
+    height: 100%;
+    background-color: #221f1f;
+    background-size: contain;
+    color: white;
+
+    .header-djs {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 2rem 0 2rem;
+        
+        .logo-djs {
+            font-family: "Bebas Neue", cursive;
+            font-size: 2rem;
+        }
+
+        .header-derecha-djs  {
+            display: grid;
+            flex-direction: column;
+            text-align: right;
+            gap: 1rem;
+
+            p {
+                font-family: "roboto";
+            }
+
+            .menu-djs {
+                list-style: none;
+                display: flex;
+                font-family: "Bebas Neue", cursive;
+                letter-spacing: 3px;
+                font-size: 1.5rem;
+                gap: 2rem;
+                font-weight: 300;    
+            }
+        }
+    }
+
+    .djs-titulo {
+        h2 {
+            font-size: 3rem;
+            font-family: "Roboto";
+            padding: 40px ;
+        }
+    }
+
+    .menu-item-djs {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .col-md-4 {
+        padding: 30px ;
+    }
+}

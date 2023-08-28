@@ -1,0 +1,83 @@
+.hero {
+    height: 110vh;
+    background-image: url(../img/Compressed/DjC.jpg);
+    background-size: cover;
+    color: black;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 2rem 0 2rem;
+
+        .logo {
+            font-family: "Bebas Neue", cursive;
+            font-size: 2rem;
+        }
+
+        .header-derecha {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 1rem;
+
+            p {
+                font-family: "roboto";
+            }
+
+            .menu {
+                list-style: none;
+                display: flex;
+                font-family: "Bebas Neue", cursive;
+                letter-spacing: 3px;
+                font-size: 1.5rem;
+                gap: 2rem;
+                font-weight: 300;   
+            }
+        }
+    }
+
+    .main {
+        display: flex;
+    
+        > div {
+            flex: 1;
+        }
+    
+        .main-texto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 3rem;
+    
+            h4 {
+                font-family: "Bebas Neue";
+                font-weight: 300;
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+    
+            h2 {
+                font-family: "Roboto";
+                font-size: 5rem;
+                line-height: 1;
+            }
+    
+            h3 {
+                font-family: "Roboto";
+                font-size: 3rem;
+            }
+        }
+    
+    }
+
+    .main-lorem {
+        display: flex;
+        padding: 85px 20px;
+        font-family: "Roboto"; width: 300;
+    }
+
+    .menu-item {
+        color: black;
+        text-decoration: none;
+    }
+}

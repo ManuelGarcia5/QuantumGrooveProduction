@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 110vh;
+  background-image: url(../img/Compressed/DjC.jpg);
+  background-size: cover;
+  color: black;
+}
+.hero .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem 0 2rem;
+}
+.hero .header .logo {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+}
+.hero .header .header-derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.hero .header .header-derecha p {
+  font-family: "roboto";
+}
+.hero .header .header-derecha .menu {
+  list-style: none;
+  display: flex;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  gap: 2rem;
+  font-weight: 300;
+}
+.hero .main {
+  display: flex;
+}
+.hero .main > div {
+  flex: 1;
+}
+.hero .main .main-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+}
+.hero .main .main-texto h4 {
+  font-family: "Bebas Neue";
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.hero .main .main-texto h2 {
+  font-family: "Roboto";
+  font-size: 5rem;
+  line-height: 1;
+}
+.hero .main .main-texto h3 {
+  font-family: "Roboto";
+  font-size: 3rem;
+}
+.hero .main-lorem {
+  display: flex;
+  padding: 85px 20px;
+  font-family: "Roboto";
+  width: 300;
+}
+.hero .menu-item {
+  color: black;
+  text-decoration: none;
+}
+
+.hero-eventos {
+  height: 260vh;
+  background-image: url(../img/Compressed/RedEsp.jpg);
+  background-size: cover;
+  color: white;
+}
+.hero-eventos .header-eventos {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem 0 2rem;
+}
+.hero-eventos .header-eventos .logo-eventos {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+}
+.hero-eventos .header-derecha-eventos {
+  display: grid;
+  flex-direction: column;
+  text-align: right;
+  gap: 1rem;
+}
+.hero-eventos .header-derecha-eventos p {
+  font-family: "roboto";
+}
+.hero-eventos .header-derecha-eventos .menu-eventos {
+  list-style: none;
+  display: flex;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  gap: 2rem;
+  font-weight: 300;
+}
+.hero-eventos .header-derecha-eventos .menu-eventos .menu-item-eventos {
+  color: white;
+  text-decoration: none;
+}
+.hero-eventos .evento-titulo h2 {
+  font-size: 3rem;
+  font-family: "Roboto";
+  padding: 40px;
+}
+.hero-eventos .evento-lorem {
+  font-family: "Roboto";
+  padding-top: 10px;
+  list-style: none;
+}
+.hero-eventos .fecha-eventos {
+  padding-top: 80px;
+  display: grid;
+  justify-content: center;
+}
+.hero-eventos .li-eventos {
+  display: grid;
+  justify-content: center;
+}
+
+.hero-nosotros {
+  height: 100%;
+  background-image: url(../img/Compressed/Quivver.jpg);
+  background-size: cover;
+  color: black;
+}
+.hero-nosotros .header-nosotros {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem 0 2rem;
+}
+.hero-nosotros .header-nosotros .logo-nosotros {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+}
+.hero-nosotros .header-nosotros .header-derecha-nosotros {
+  display: grid;
+  flex-direction: column;
+  text-align: right;
+  gap: 1rem;
+}
+.hero-nosotros .header-nosotros .header-derecha-nosotros p {
+  font-family: "roboto";
+}
+.hero-nosotros .header-nosotros .header-derecha-nosotros .menu-nosotros {
+  list-style: none;
+  display: flex;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  gap: 2rem;
+  font-weight: 300;
+}
+.hero-nosotros .header-nosotros .header-derecha-nosotros .menu-nosotros .menu-item-nosotros {
+  color: black;
+  text-decoration: none;
+}
+.hero-nosotros .nosotros-titulo h2 {
+  font-size: 3rem;
+  font-family: "Roboto";
+  padding: 40px;
+}
+.hero-nosotros .nosotros-lorem {
+  font-family: "Roboto";
+  padding: 50px;
+  width: 700px;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.8156862745);
+}
+
+.hero-contacto {
+  height: 140vh;
+  background-image: url(../img/Compressed/EricPrydzBW.png);
+  background-size: cover;
+  color: white;
+}
+.hero-contacto .header-contacto {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem 0 2rem;
+}
+.hero-contacto .header-contacto .logo-contacto {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+}
+.hero-contacto .header-derecha-contacto {
+  display: grid;
+  flex-direction: column;
+  text-align: right;
+  gap: 1rem;
+}
+.hero-contacto .header-derecha-contacto p {
+  font-family: "roboto";
+}
+.hero-contacto .header-derecha-contacto .menu-contacto {
+  list-style: none;
+  display: flex;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  gap: 2rem;
+  font-weight: 300;
+}
+.hero-contacto .header-derecha-contacto .menu-contacto .menu-item-contacto {
+  color: white;
+  text-decoration: none;
+}
+.hero-contacto .contacto-titulo h2 {
+  font-size: 3rem;
+  font-family: "Roboto";
+  padding: 40px;
+}
+.hero-contacto .accordion {
+  display: grid;
+  padding: 150px 50px 50px 50px;
+}
+
+.hero-djs {
+  height: 100%;
+  background-color: #221f1f;
+  background-size: contain;
+  color: white;
+}
+.hero-djs .header-djs {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem 0 2rem;
+}
+.hero-djs .header-djs .logo-djs {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+}
+.hero-djs .header-djs .header-derecha-djs {
+  display: grid;
+  flex-direction: column;
+  text-align: right;
+  gap: 1rem;
+}
+.hero-djs .header-djs .header-derecha-djs p {
+  font-family: "roboto";
+}
+.hero-djs .header-djs .header-derecha-djs .menu-djs {
+  list-style: none;
+  display: flex;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  gap: 2rem;
+  font-weight: 300;
+}
+.hero-djs .djs-titulo h2 {
+  font-size: 3rem;
+  font-family: "Roboto";
+  padding: 40px;
+}
+.hero-djs .menu-item-djs {
+  color: white;
+  text-decoration: none;
+}
+.hero-djs .col-md-4 {
+  padding: 30px;
+}
+
+.footer-html {
+  display: flex;
+  background-color: black;
+  color: #8d8b8b;
+  text-align: center;
+  padding: 1px 5px 1px 5px;
+}
+.footer-html .footer-contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+  padding: 0.2rem;
+}
+
+.media-invisible {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .media-invisible {
+    display: block;
+  }
+  .header, .header-eventos, .header-djs, .header-nosotros, .header-contacto {
+    display: none;
+  }
+  /*INDEX*/
+  .hero {
+    background-image: url(../img/Mediacropped/DjC.jpg);
+  }
+  .main, .main-lorem {
+    display: block;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .main-texto {
+    padding: 1rem;
+    padding-top: 125px;
+  }
+  /*EVENTOS*/
+  .hero-eventos {
+    background-image: url(../img/Mediacropped/RedEsp.jpg);
+  }
+  .evento-titulo {
+    padding-top: 80px;
+  }
+  .fecha-eventos {
+    padding-top: 130px;
+  }
+  /*DJS*/
+  .djs-titulo {
+    padding-top: 80px;
+  }
+  /*NOSOTROS*/
+  .hero-nosotros {
+    background-image: url(../img/Mediacropped/Consola.jpg);
+    background-position: right;
+    color: #ffffff;
+  }
+  .nosotros-titulo {
+    padding-top: 80px;
+  }
+  .nosotros-lorem {
+    width: auto;
+    box-shadow: none;
+  }
+  /*CONTACTO*/
+  .hero-contacto {
+    background-image: url(../img/Mediacropped/EricPrydzBW.jpg);
+    background-position: center;
+  }
+  .contacto-titulo {
+    padding-top: 80px;
+  }
+}/*# sourceMappingURL=style.css.map */
