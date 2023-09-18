@@ -3,44 +3,41 @@
 }
 
 @media screen and (max-width: 780px) {
-    .media-invisible {
-        display: block;
-    }
-    
-    .header, .header-eventos, .header-djs, .header-nosotros, .header-contacto {
-        display: none;
-    }
 
     /*INDEX*/
 
     .hero {
         background-image: url(../img/Mediacropped/DjC.jpg);
-    }
-    
-    .main, .main-lorem {
-        display: block;
-        justify-content: center;
-        padding: 1rem;
-    }
 
-    .main-texto {        
-        padding: 1rem;
-        padding-top: 125px;
-    }
+        .main, .main-lorem {
+            display: block;
+            justify-content: center;
+            padding: 1rem;
+        }
+    
+        .main-texto {        
+            padding: 1rem;
+            padding-top: 125px;
+        }
+    }    
 
     /*EVENTOS*/
 
     .hero-eventos {
         background-image: url(../img/Mediacropped/RedEsp.jpg);
-    }
 
-    .evento-titulo {
-        padding-top: 80px;
-    }
+        .evento-titulo {
+            padding-top: 80px;
 
-    .fecha-eventos {
-        padding-top: 130px;
-    }
+            .evento-lorem {
+                padding: 1rem;
+            }
+        }
+
+        .fecha-eventos {
+            padding-top: 130px;
+        }
+    }    
     
     /*DJS*/
     
@@ -54,27 +51,37 @@
         background-image: url(../img/Mediacropped/Consola.jpg);
         background-position: right;
         color: #ffffff;
-    }
 
-    .nosotros-titulo {
-        padding-top: 80px;
-    }
-
-    .nosotros-lorem {
-        width: auto;
-        box-shadow: none; 
-
-    }
+        .nosotros-titulo {
+            padding-top: 80px;
+        }
+    
+        .nosotros-lorem {
+            width: auto;
+            box-shadow: none; 
+    
+        }
+    }    
 
     /*CONTACTO*/
 
     .hero-contacto {
         background-image: url(../img/Mediacropped/EricPrydzBW.jpg);
         background-position: center;
+
+        .contacto-titulo {
+            padding-top: 80px;
+        }
     }
 
-    .contacto-titulo {
-        padding-top: 80px;
+    /*NR*/
+
+    .media-invisible {
+        display: block;
+    }
+
+    .media {
+        display: none;
     }
     
 }

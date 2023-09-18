@@ -1,0 +1,109 @@
+/*ANIMACIONES-MENU*/
+
+%menu-item {
+    transform: scale(1.1);
+}
+
+.home:hover {
+    @extend %menu-item;
+}
+
+.eventos:hover {
+    @extend %menu-item;
+}
+
+.djs:hover {
+    @extend %menu-item;
+}
+
+.nosotros:hover {
+    @extend %menu-item;
+}
+
+.contacto:hover {
+    @extend %menu-item;
+}
+
+/*ANIMACIONES-CONTENIDO*/
+
+%contenido1-5 {
+    animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;  
+}
+
+%contenido1-8 {
+    animation: slide-in-bottom 1.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/*INDEX*/
+
+.main-texto {
+    @extend %contenido1-5;    
+}
+
+.main-lorem {
+    @extend %contenido1-8;
+}
+
+/*EVENTOS*/
+
+.evento-titulo {
+    @extend %contenido1-5;
+}
+
+.evento-lorem {
+    @extend %contenido1-8;
+}
+
+/*DJS*/
+
+.djs-titulo {
+    @extend %contenido1-5;
+}
+
+.col-md-4 {
+	animation: slide-in-bottom 3.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-bottom {
+    0% {
+      transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+.hero-djs{
+    animation: color-change-2x 1.5s ease-in-out alternate both;
+}
+
+@keyframes color-change-2x {
+    0% {
+      background: #000000;
+    }
+    100% {
+      background: #221f1f;
+    }
+}
+
+/*NOSOTROS*/
+
+.nosotros-titulo {
+    @extend %contenido1-5;
+}
+
+.nosotros-lorem {
+    @extend %contenido1-8;
+}
+
+/*CONTACTO*/
+
+.contacto-titulo {
+    @extend %contenido1-5;
+}
+
+.accordion {
+    @extend %contenido1-8;
+}

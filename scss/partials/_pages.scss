@@ -1,0 +1,321 @@
+/*EXTEND*/
+
+%header-extend {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 0 2rem;
+}
+
+%logo-extend {
+    font-family: "Bebas Neue", cursive;
+    font-size: 2rem;
+}
+
+%header-derecha-extend {
+    display: grid;
+    flex-direction: column;
+    text-align: right;
+    gap: 1rem;
+}
+
+%p {
+    font-family: "roboto";
+}
+
+%menu {
+    list-style: none;
+    display: flex;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    gap: 2rem;
+    font-weight: 300;
+}
+
+%titulo {
+    font-size: 3rem;
+    font-family: "Roboto";
+    padding: 40px;
+}
+
+
+
+/*INDEX*/
+
+.hero {
+    height: 110vh;
+    background-image: url(../img/Compressed/DjC.jpg);
+    background-size: cover;
+    color: black;
+
+    .header {
+        @extend %header-extend;
+
+        .logo {
+            @extend %logo-extend;
+        }
+
+        .header-derecha {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 1rem;
+
+            p {
+                @extend %p;
+            }
+
+            .menu {
+                @extend %menu;
+            }
+        }
+    }
+
+    .main {
+        display: flex;
+    
+        > div {
+            flex: 1;
+        }
+    
+        .main-texto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 2rem;
+    
+            h4 {
+                font-family: "Bebas Neue";
+                font-weight: 300;
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+    
+            h2 {
+                font-family: "Roboto";
+                font-size: 5rem;
+                line-height: 1;
+            }
+    
+            h3 {
+                font-family: "Roboto";
+                font-size: 3rem;
+            }
+        }
+    
+    }
+
+    .main-lorem {
+        display: flex;
+        padding: 85px 20px;
+        font-family: "Roboto"; width: 300;
+    }
+
+    .menu-item {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+/*EVENTOS*/
+
+.hero-eventos {
+    height: 260vh;
+    background-image: url(../img/Compressed/RedEsp.jpg);
+    background-size: cover;
+    color: white;
+
+    .header-eventos {
+        @extend %header-extend;
+
+        .logo-eventos {
+            @extend %logo-extend;
+        }
+    }
+
+    .header-derecha-eventos  {
+        @extend %header-derecha-extend;         
+
+        p {
+            @extend %p;
+        }
+
+        .menu-eventos {
+            @extend %menu;
+            
+            .menu-item-eventos {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .evento-titulo {
+        h2 {
+            @extend %titulo;
+        }
+    }
+
+    .evento-lorem {
+        font-family: "Roboto";
+        padding: 1rem;
+        list-style: none;    
+    }
+    
+    .fecha-eventos {
+        padding-top: 80px;
+        display: grid;
+        justify-content: center;
+    }
+    
+    .li-eventos {
+        display: grid;
+        justify-content: center;
+    }
+}
+
+/*NOSOTROS*/
+
+.hero-nosotros {
+    height: 100%;
+    background-image: url(../img/Compressed/Quivver.jpg);
+    background-size: cover;
+    color: black;
+
+    .header-nosotros {
+        @extend %header-extend;
+
+        .logo-nosotros {
+            @extend %logo-extend;
+        }
+
+        .header-derecha-nosotros  {
+            @extend %header-derecha-extend;
+
+            p {
+                @extend %p;
+            }
+
+            .menu-nosotros {
+                @extend %menu;
+                
+                .menu-item-nosotros {
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .nosotros-titulo {
+        h2 {
+            @extend %titulo;
+        }        
+    }
+
+    .nosotros-lorem {
+        font-family: "Roboto";
+        padding: 50px;
+        width: 700px; 
+    }
+}
+
+/*CONTACTO*/
+
+.hero-contacto {
+    height: 140vh;
+    background-image: url(../img/Compressed/EricPrydzBW.png);
+    background-size: cover;
+    color: white;
+    
+    .header-contacto {
+        @extend %header-extend;
+        
+        .logo-contacto {
+            @extend %logo-extend;
+        }
+    }
+
+    .header-derecha-contacto  {
+        @extend %header-derecha-extend;
+
+        p {
+            @extend %p;
+        }
+
+        .menu-contacto {
+            @extend %menu;
+            
+            .menu-item-contacto {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .contacto-titulo {
+        h2 {
+            @extend %titulo;
+        }            
+    }
+    
+    .accordion {
+        display: grid;
+        padding: 150px 50px 50px 50px;
+    }
+}
+
+/*DJS*/
+
+.hero-djs {
+    height: 100%;
+    background-color: #221f1f;
+    background-size: contain;
+    color: white;
+
+    .header-djs {
+        @extend %header-extend;
+
+        .logo-djs {
+            @extend %logo-extend;
+        }
+    }
+
+    .header-derecha-djs {
+        @extend %header-derecha-extend;
+
+        p {
+            @extend %p;
+        }
+
+        .menu-djs {
+            @extend %menu;
+            
+            .menu-item-djs {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .djs-titulo {
+        h2 {
+            @extend %titulo;
+        }        
+    }
+    
+    .col-md-4 {
+        padding: 30px ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
